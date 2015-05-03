@@ -13,6 +13,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     transition: $transition-property $transition-time $method;
 }
 /**/
+
+/* font variables */
+$lobster : 'Lobster', cursive;
+$ubuntu : 'Ubuntu', sans-serif;
+/**/
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -116,4 +121,20 @@ body {
 }
 .smallLogo img.brand-logo {
   width:50px;
+}
+.head-container {
+  .head-main {
+    width: 450px;
+  }
+  .main-title {
+    font-size: 40px;
+  }
+  .main-title-developer {
+    font-family: $ubuntu;
+    float: left;
+  }
+  .main-title-designer {
+    font-family: $lobster;
+    float: right;
+  }
 }

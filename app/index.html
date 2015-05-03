@@ -2,7 +2,7 @@
 <html class="no-js" ng-app="ioanaAppApp">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Ioana Apetrei</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -13,6 +13,8 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
   </head>
   <body ng-controller="scrollController">
     <!--[if lt IE 7]>
@@ -23,9 +25,8 @@
     <div class="header">
       <div class="navbar navbar-default navbar-fixed-top" ng-class="{smallLogo: scroll > 50, bigLogo: scroll <= 50}" 
            role="navigation" scroll-position="scroll">
-        <div class="container">
+        <div class="container-fluid">
           <div class="navbar-header">
-<!--            <span class='scroll-debug' scroll-position="scroll">{{scroll}}</span>-->
 
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
               <span class="sr-only">Toggle</span>
@@ -52,7 +53,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
     <div ng-view=""></div>
     </div>
 
