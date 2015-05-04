@@ -27,8 +27,11 @@ $ubuntu : 'Ubuntu', sans-serif;
 
 body {
   padding: 0;
+  height:100%;
 }
-
+.full-height-container {
+  height:100%;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -124,7 +127,7 @@ body {
 }
 .head-container {
   .head-main {
-    width: 450px;
+    width: 400px;
   }
   .main-title {
     font-size: 40px;
@@ -165,6 +168,8 @@ body {
     opacity: 0;
     z-index: 1;
     position: absolute;
+    width:calc(100vw - 30px);
+    box-sizing: border-box;
 }
 
 .at-view-slide-in-top.ng-enter-active {
@@ -175,6 +180,8 @@ body {
     transform: translate(0px, 0px);
     opacity: 1;
     position: absolute;
+    width:calc(100vw - 30px);
+    box-sizing: border-box;
 }
 
 .at-view-slide-out-top.ng-leave {
@@ -194,6 +201,8 @@ body {
     opacity: 1;
     z-index: 3;
     position: absolute;
+    width:calc(100vw - 30px);
+    box-sizing: border-box;
 }
 
 .at-view-slide-out-top.ng-leave-active {
@@ -203,4 +212,6 @@ body {
     -o-transform: translate(0px, -100%);
     transform: translate(0px, -100%);
     opacity: 0;
+    width:calc(100vw - 30px);
+    box-sizing: border-box;
 }
